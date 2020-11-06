@@ -138,21 +138,25 @@ def create_tags(service, instanceId, eventInfo):
             ],
 
             Tags=[
-
                 {
-
-                    'Key': 'creator',
-
+                    'Key': 'owner',
                     'Value': eventInfo['creator']
-
                 },
-
                 {
-
                     'Key': 'creation_date',
-
                     'Value': eventInfo['creation_date']
-
+                },
+                {
+                    'Key': 'Environment',
+                    'Value': ''
+                },
+                {
+                    'Key': 'Project',
+                    'Value': ''
+                },
+                {
+                    'Key': 'Charge_Code',
+                    'Value': ''
                 }
 
             ]
